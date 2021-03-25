@@ -40,16 +40,20 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
         const filterCartForAdd = cart.find(product => product.id === productId);
 
         if(filterCartForAdd){
-          updateProductAmount({ productId, amount: filterCartForAdd.amount + 1});
+          const IncrementAmount = { 
+            productId, 
+            amount: filterCartForAdd.amount + 1
+          }
+          
+          updateProductAmount(IncrementAmount);
           return;
-
         }
       
         const productSelected = (await api.get(`/products/${productId}`)).data;
         
         const newCart = [...cart, {...productSelected,   amount: 1}];
+
         localStorage.setItem('@RocketShoes:cart', JSON.stringify(newCart));        
-        
         setCart(newCart);
         toast.success('Produto adicionado!!!');
       }else{
@@ -87,14 +91,16 @@ export function CartProvider({ children }: CartProviderProps): JSX.Element {
       if( amount < 1) return;
 
       const stock = (await api.get<Stock>(`/stock/${productId}`)).data;
+
+      const productExist = cart.some(product => product.id === productId);
       
-      if(amount <= stock.amount) {
+      if(productExist && amount <= stock.amount) {
    
         const updateCart = cart.map(product => {
           if(product.id === productId) {
               product.amount = amount;
           }
-          return product
+          return product;
         })
         
         await setCart([...updateCart])
