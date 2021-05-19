@@ -19,7 +19,6 @@
    [![Licence](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)](LICENSE.md) 
    <img alt="TypeScript" src="https://img.shields.io/badge/typescript-%23007ACC.svg?&style=for-the-badge&logo=typescript&logoColor=white"/> 
   <img alt="React" src="https://img.shields.io/badge/react-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/> 
-  <img alt="Next JS" src="https://img.shields.io/badge/nextjs-%23000000.svg?&style=for-the-badge&logo=next.js&logoColor=white"/>
 <img alt="Styled Components" src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white"/>
   
 <!--   ![GitHub][repository_license_badge] ![React_Badge][web_react_badge] ![Types][typescript_shields] ![Next][next_shields] -->
@@ -84,7 +83,6 @@ Rocketshoes é um site que simula um e-commerce(loja online) de calçados com fu
  #### **Website** ([React][react])
  
   - **[Typescript][typescript]**
-  - **[Next.js][next]**
   - **[JSON Server][json_server]**
   - **[Axios][axios]**
   - **[Styled Components][styled_components]**
