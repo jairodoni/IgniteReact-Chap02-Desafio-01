@@ -61,7 +61,7 @@
 
 ## **💻 Projeto**
 
-Rocketshoes é um site que simula um e-commerce(loja online) de calçados com funções de listar produtos, adicionar items ao carrinho e somar preço de produtos do carrinho.
+Rocketshoes é um e-commerce(loja online) de produtos esportivos com funções de listar produtos, adicionar itens ao carrinho e calcular o custo total dos produtos adicionados ao carrinho. 
 
 ---
 
